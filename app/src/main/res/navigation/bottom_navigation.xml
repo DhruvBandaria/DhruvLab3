@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bottom_navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/dhruvFragment">
 
+    <fragment
+        android:id="@+id/dhruvFragment"
+        android:name="dhruv.bandaria.s301102928.DhruvFragment"
+        android:label="fragment_dhruv"
+        tools:layout="@layout/fragment_dhruv" />
+    <fragment
+        android:id="@+id/bandariaFragment"
+        android:name="dhruv.bandaria.s301102928.BandariaFragment"
+        android:label="fragment_bandaria"
+        tools:layout="@layout/fragment_bandaria" />
+    <fragment
+        android:id="@+id/s301102928Fragment"
+        android:name="dhruv.bandaria.s301102928.S301102928Fragment"
+        android:label="fragment_s301102928"
+        tools:layout="@layout/fragment_s301102928" />
 </navigation>

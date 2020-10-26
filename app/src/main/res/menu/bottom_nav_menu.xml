@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/drwaing"
+        android:icon="@drawable/ic_drawing"
+        android:id="@+id/dhruvFragment"/>
+    <item android:title="@string/animation"
+        android:icon="@drawable/ic_animation"
+        android:id="@+id/bandariaFragment"/>
+    <item android:title="@string/earth_animation"
+        android:icon="@drawable/ic_earth"
+        android:id="@+id/s301102928Fragment"/>
+</menu>
