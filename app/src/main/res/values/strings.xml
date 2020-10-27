@@ -4,5 +4,9 @@
     <string name="drwaing">Drawing</string>
     <string name="animation">Animation</string>
     <string name="earth_animation">Earth Animation</string>
+    <string name="name_studentid">Dhruv Bandaria 301102928</string>
+    <string name="brush_width">Brush Width:</string>
+    <string name="fname">Dhruv</string>
+    <string name="lname">Bandaria</string>
 
 </resources>

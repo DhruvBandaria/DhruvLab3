@@ -2,63 +2,53 @@ package dhruv.bandaria.s301102928;
 
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link DhruvFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class DhruvFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public DhruvFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment DhruvFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static DhruvFragment newInstance(String param1, String param2) {
-        DhruvFragment fragment = new DhruvFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
+    PaintView paintView;
+    Button b1,b2;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dhruv, container, false);
+
+        View v=inflater.inflate(R.layout.fragment_dhruv, container, false);
+        paintView=new PaintView(getContext(),null);
+        RelativeLayout rl=v.findViewById(R.id.cons_layout_dhruv_fragment);
+        final RelativeLayout.LayoutParams params=new RelativeLayout.LayoutParams(1100,1000);
+        params.addRule(RelativeLayout.BELOW,R.id.name_and_studentId);
+        params.topMargin=250;
+        rl.addView(paintView,params);
+
+        b1=v.findViewById(R.id.button_temp1);
+        b2=v.findViewById(R.id.button_temp2);
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                paintView.changeBrushSize(10f);
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                paintView.changeBrushSize(15f);
+            }
+        });
+
+        return v;
     }
 }

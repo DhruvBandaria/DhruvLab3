@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cons_layout_dhruv_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DhruvFragment">
+    tools:context=".DhruvFragment"
+    android:background="@color/colorGray">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/name_and_studentId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="303dp"
-        android:layout_marginEnd="208dp"
-        android:layout_marginBottom="409dp"
-        android:text="Drawing Fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="@string/name_studentid"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/brush_width_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brush_width"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="25dp"
+        />
+    <Button
+        android:id="@+id/button_temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Brush 10"/>
+    <Button
+        android:id="@+id/button_temp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brush 15"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="80dp"
+        />
+
+</RelativeLayout>
