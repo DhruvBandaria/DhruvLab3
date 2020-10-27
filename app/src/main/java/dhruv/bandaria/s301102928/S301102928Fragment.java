@@ -9,12 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class S301102928Fragment extends Fragment {
 
     ImageView iv;
-
+    Button startAnimation,stopAnimation;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +26,23 @@ public class S301102928Fragment extends Fragment {
                              Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.fragment_s301102928, container, false);
         iv=v.findViewById(R.id.imageView2);
+        startAnimation=v.findViewById(R.id.startAnimation);
+        stopAnimation=v.findViewById(R.id.stopAnimation);
+        final Animation animation= AnimationUtils.loadAnimation(getContext(),R.anim.rotate);
 
-        Animation animation= AnimationUtils.loadAnimation(getContext(),R.anim.rotate);
-        iv.startAnimation(animation);
+        startAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv.startAnimation(animation);
+            }
+        });
+        stopAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv.clearAnimation();
+            }
+        });
+
 
         return v;
     }

@@ -5,8 +5,22 @@
     <string name="animation">Animation</string>
     <string name="earth_animation">Earth Animation</string>
     <string name="name_studentid">Dhruv Bandaria 301102928</string>
-    <string name="brush_width">Brush Width:</string>
+    <string name="brush_width">Brush Size:</string>
+    <string name="brush_color">Brush Color:</string>
     <string name="fname">Dhruv</string>
     <string name="lname">Bandaria</string>
+    <string name="start_animation">Start Animation</string>
+    <string name="stop_animation">Stop Animation</string>
 
+    <string-array name="brush_size">
+        <item>5mm Brush</item>
+        <item>10mm Brush</item>
+        <item>15mm Brush</item>
+    </string-array>
+    <string-array name="brush_color">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+    </string-array>
 </resources>
