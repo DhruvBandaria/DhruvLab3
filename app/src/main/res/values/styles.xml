@@ -1,5 +1,8 @@
 <resources>
-    <!-- Base application theme. -->
+    <!-- Name: Dhruv Bandaria
+         Student id: 301102928
+         Section Nubmer: 002
+     -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>

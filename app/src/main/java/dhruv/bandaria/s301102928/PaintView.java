@@ -10,7 +10,11 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-
+/*
+Name - Dhruv Bandaria
+Student Id- 301102928
+Section Number- 002
+*/
 public class PaintView extends View {
 
     public static int Brush_Size=10;

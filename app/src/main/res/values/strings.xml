@@ -1,4 +1,8 @@
 <resources>
+    <!-- Name: Dhruv Bandaria
+         Student id: 301102928
+         Section Nubmer: 002
+     -->
     <string name="app_name">DhruvLab3</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="drwaing">Drawing</string>
@@ -12,6 +16,9 @@
     <string name="start_animation">Start Animation</string>
     <string name="stop_animation">Stop Animation</string>
     <string name="open_cam">Make Call</string>
+    <string name="pop_up_message">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
     <string-array name="brush_size">
         <item>5mm Brush</item>

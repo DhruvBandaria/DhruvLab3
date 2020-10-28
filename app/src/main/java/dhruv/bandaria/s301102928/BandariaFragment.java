@@ -15,6 +15,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
+/*
+Name - Dhruv Bandaria
+Student Id- 301102928
+Section Number- 002
+*/
 public class BandariaFragment extends Fragment {
 
     Button button,startAnimation,stopAnimation;

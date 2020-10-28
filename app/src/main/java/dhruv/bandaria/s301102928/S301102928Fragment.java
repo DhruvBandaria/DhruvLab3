@@ -12,6 +12,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
+/*
+Name - Dhruv Bandaria
+Student Id- 301102928
+Section Number- 002
+*/
 public class S301102928Fragment extends Fragment {
 
     ImageView iv;
